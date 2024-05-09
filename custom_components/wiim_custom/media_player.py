@@ -117,7 +117,7 @@ SOURCES_MAP = {'-1': 'Idle',
                '1': 'Airplay', 
                '2': 'DLNA',
                '3': 'Amazon',
-			   '4': '???',
+			         '4': '???',
                '5': 'Chromecast',
                '10': 'Network',
                '20': 'Network',			   
@@ -652,7 +652,6 @@ class WiiMDevice(MediaPlayerEntity):
 
         if self._device_model != 'WiiM Amp' and 'HDMI' in source_list:
             del source_list['HDMI']
-
         if len(source_list) > 0:
             return list(source_list.values())
         else:
